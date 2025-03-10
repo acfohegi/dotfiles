@@ -40,8 +40,9 @@ if executable('fzf')
   Plug 'junegunn/fzf.vim'
 endif
 if executable('task')
-  Plug 'tools-life/taskwiki', { 'for': 'vimwiki' }
-endif
+  Plug 'vimwiki/vimwiki', { 'for': ['vimwiki', 'markdown'] }
+  Plug 'tools-life/taskwiki', { 'for': ['vimwiki', 'markdown'] }
+ endif
 if executable('xkbswitch')
   Plug 'lyokha/vim-xkbswitch'
 endif
