@@ -1,0 +1,27 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/solarized_dark.toml"
+]
+
+[mouse]
+hide_when_typing = true
+
+[font]
+size = 24.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Light"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Medium"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Medium Italic"
+
