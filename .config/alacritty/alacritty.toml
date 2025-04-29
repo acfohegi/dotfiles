@@ -1,7 +1,7 @@
-[general]
-import = [
-    "~/.config/alacritty/themes/solarized_dark.toml"
-]
+# [general]
+# import = [
+#     "~/.config/alacritty/themes/solarized_dark.toml"
+# ]
 
 [mouse]
 hide_when_typing = true

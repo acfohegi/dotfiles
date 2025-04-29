@@ -4,7 +4,8 @@
 
 set termguicolors
 if &termguicolors
-    let g:solarized_termtrans = 1
+    let g:solarized_termtrans = 0
+    set background=dark
     colorscheme solarized8_flat
     highlight SpecialKey guibg=NONE
 endif
