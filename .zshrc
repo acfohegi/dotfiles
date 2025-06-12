@@ -25,7 +25,8 @@ fi
 
 bindkey '\e[1;3D' backward-word     # Alt + Left
 bindkey '\e[1;3C' forward-word      # Alt + Right
-bindkey '\e[3;3~' kill-word         # Alt + Delete
+bindkey '^[^?' backward-kill-word   # Alt + Backspace
+bindkey '^[[3;3~' kill-word         # Alt + Delete
 bindkey '\e[H' beginning-of-line    # Home
 bindkey '\e[F' end-of-line          # End
 
