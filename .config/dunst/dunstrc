@@ -1,5 +1,4 @@
 [global]
-    ### Display
     monitor = 0
     follow = none
     enable_posix_regex = false
