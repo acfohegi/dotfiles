@@ -5,8 +5,9 @@
 set path+=**
 set wildignore+=**/node_modules/**
 
-" Use the system clipboard
-set clipboard=unnamed
+" Use the system clipboard.
+" Works with MacOS clipboard and with both Linux clipboards.
+set clipboard=unnamed,unnamedplus
 
 let bckp_dir = expand('$HOME/.vim/backup')
 let swp_dir = expand('$HOME/.vim/swp')
