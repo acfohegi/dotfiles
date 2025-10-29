@@ -1,7 +1,10 @@
 export LANG=en_US.UTF-8
+export XDG_CONFIG_HOME="$HOME/.config"
 export MANPAGER="vim -M +MANPAGER -"
 export EDITOR="vim"
 export FZF_DEFAULT_COMMAND="find * -type f"
+export COMPLETION_FILE="$XDG_CONFIG_HOME/zsh/completion.zsh"
+export PRIVATE_EXPORTS_FILE="$XDG_CONFIG_HOME/zsh/completion.zsh"
 
 alias :q="exit"
 alias grep='grep --color=auto'
@@ -12,8 +15,13 @@ alias mv='mv -i'
 alias ll="ls -laFh"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-source ~/.config/zsh/completion.zsh
-source ~/.config/zsh/private/exports.zsh
+if [[ -f "$COMPLETION_FILE" ]]; then
+  source $COMPLETION_FILE
+fi
+
+if [[ -f "$PRIVATE_EXPORTS_FILE" ]]; then
+  source $PRIVATE_EXPORTS_FILE
+fi
 
 if command -v zoxide > /dev/null; then
   eval "$(zoxide init zsh)"
