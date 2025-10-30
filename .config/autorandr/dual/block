@@ -1,0 +1,10 @@
+#!/bin/bash
+# Blocks dual if lid is not opened (exit 0 = skip)
+
+LID_STATE="/proc/acpi/button/lid/LID/state"
+if [[ -f "$LID_STATE" ]] && ! grep -q "open" "$LID_STATE"; then
+    exit 0
+fi
+
+exit 1
+

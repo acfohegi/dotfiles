@@ -16,14 +16,14 @@ log "START FOR EXTERNAL_OUTPUT: $EXTERNAL_OUTPUT"
 log "XAUTHORITY:$XAUTHORITY DISPLAY:$DISPLAY INTERNAL_OUTPUT:$INTERNAL_OUTPUT"
 log "XRANDR STATE FOR EXTERNAL OUTPUT: $(xrandr | grep $EXTERNAL_OUTPUT)"
 
-if xrandr | grep "$EXTERNAL_OUTPUT connected"; then
+if xrandr | grep "^$EXTERNAL_OUTPUT connected"; then
     log "EXTERNAL_OUTPUT CONNECTED: $EXTERNAL_OUTPUT"
     xrandr --output $EXTERNAL_OUTPUT --auto --above $INTERNAL_OUTPUT
 fi
 
 sleep 1
 
-if xrandr | grep "$EXTERNAL_OUTPUT disconnected"; then
+if xrandr | grep "^$EXTERNAL_OUTPUT disconnected"; then
     log "EXTERNAL_OUTPUT DISCONNECTED: $EXTERNAL_OUTPUT"
     xrandr --output "$EXTERNAL_OUTPUT" --off
 fi
