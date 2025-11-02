@@ -1,5 +1,5 @@
-export LANG=en_US.UTF-8
 export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
 export MANPAGER="vim -M +MANPAGER -"
 export EDITOR="vim"
 export FZF_DEFAULT_COMMAND="find * -type f"
@@ -11,9 +11,12 @@ alias grep='grep --color=auto'
 alias rm='rm -I'
 alias cp='cp -i'
 alias mv='mv -i'
-# no longer using -G flag because ls is linked to lsd. they interpret it differently.
+# No longer using -G flag because ls is linked to lsd. they interpret it differently.
 alias ll="ls -laFh"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# Prompt: username@hostname(short) cwd(last part) %"
+PS1="%n@%m %1~ %# "
 
 if [[ -f "$COMPLETION_FILE" ]]; then
   source $COMPLETION_FILE
@@ -42,11 +45,17 @@ bindkey '\e[F' end-of-line          # End
 # Zsh History Configuration
 # =========================
 
+# History file
+HISTFILE="$XDG_CACHE_HOME/.zsh_history"
+
 # Share history across all zsh sessions
 setopt SHARE_HISTORY
 
 # Append to the history file instead of overwriting it
 setopt APPEND_HISTORY
+
+# Hide commands if they start with a space character
+setopt HIST_IGNORE_SPACE
 
 # Write history after each command (not just on shell exit)
 setopt INC_APPEND_HISTORY
