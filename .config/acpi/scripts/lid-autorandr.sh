@@ -19,6 +19,6 @@ else
     exit 1
 fi
 
-DISPLAY=:0 runuser -u "$USER" -- /usr/bin/autorandr --change --default laptop_only
+DISPLAY=:0 runuser -u "$USER" -- /usr/bin/autorandr --change
 logger "Triggered autorandr for user: $USER"
 
