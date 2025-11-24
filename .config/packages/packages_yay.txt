@@ -1,0 +1,6 @@
+# gui
+brave-bin
+
+# graphics utilities
+ttf-jetbrains-mono-nerd
+
