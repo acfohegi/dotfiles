@@ -1,4 +1,5 @@
-sudo pacman -S lxappearance kvantummanager
+echo "Installing theming toolkit"
+sudo pacman -S lxappearance kvantummanager qt5ct qt6ct kvantum-qt5
 
 echo "Starting Tela Circle icon theme installation"
 cd /tmp
