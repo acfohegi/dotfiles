@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=i3 menu
+GenericName=Desktop controls
+Exec=i3menu
