@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=power menu
+GenericName=Power and login controls
+Exec=powermenu
+Icon=system-shutdown
+Categories=System;

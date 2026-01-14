@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=arandr
+GenericName=Screen Settings
+Icon=display
+Exec=arandr
+Type=Application
+Categories=Settings;HardwareSettings;
+StartupNotify=true

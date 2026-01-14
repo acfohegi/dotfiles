@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=default drun
+GenericName=Desktop menu without overrides
+Exec=env XDG_DATA_DIRS= env XDG_DATA_HOME= rofi -modi drun -show drun
+Categories=System;
+

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=obsidian
+GenericName=PKM system
+Exec=/usr/bin/obsidian %U
+Terminal=false
+Type=Application
+Icon=obsidian
+StartupWMClass=obsidian
+Comment=Obsidian
+MimeType=x-scheme-handler/obsidian;
+Categories=Office;

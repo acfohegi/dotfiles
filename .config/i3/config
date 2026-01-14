@@ -70,8 +70,10 @@ bindsym $mod+q kill
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
-# NOTE: Replaced default rofi drun with custom rofi application list
-bindsym $mod+space exec "XDG_DATA_DIRS=$XDG_CONFIG_HOME rofi -modi drun,run -show drun"
+
+# NOTE: Replaced default rofi drun with custom application list
+# NOTE: Changed rofi modes
+bindsym $mod+space exec "XDG_DATA_DIRS=$XDG_CONFIG_HOME XDG_DATA_HOME=$XDG_CONFIG_HOME rofi -modi drun,window,run -show drun"
 
 # change focus
 # NOTE: Changed to vim keys:
