@@ -54,7 +54,7 @@ main() {
       systemctl hibernate
       ;;
     hybrid\ sleep)
-      systemctl "hybrid sleep" hybrid-sleep
+      systemctl hybrid-sleep
       ;;
     logout)
       # Terminates the current user session
