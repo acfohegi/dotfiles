@@ -22,7 +22,7 @@ confirm() {
 
 # Ask for confirmation for destructive actions.
 # First argument is the prompt, remaining arguments form the command to execute.
-confrim_and_run() {
+confirm_and_run() {
   local msg=$1; shift
   local CONFIRM
   CONFIRM=$(confirm "$msg") || return
