@@ -37,7 +37,9 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 "
 " Jump straight to editable properties
 autocmd FileType vimwiki nnoremap <Leader>te :TaskWikiEdit<CR>24j
-" https://github.com/vimwiki/vimwiki/issues/1449
+" Enhance Vimwiki list behavior:
+" Automatically continue list items and checkboxes when pressing 'o' (below) or 'O' (above).
+" These mappings ensure that formatting is maintained when creating new lines.
 autocmd FileType vimwiki nnoremap <silent><buffer> o A<C-o>:VimwikiReturn 1 1<CR>
 autocmd FileType vimwiki nnoremap <silent><buffer> O A<C-o>:VimwikiReturn 1 1<CR><C-o>:m-2<CR><C-o>$
 
