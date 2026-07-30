@@ -1,13 +1,11 @@
 [general]
 import = [
-    "~/.config/alacritty/themes/solarized_dark.toml"
+    "~/.config/alacritty/current/theme.toml",
+    "~/.config/alacritty/current/font_size.toml"
 ]
 
 [mouse]
 hide_when_typing = true
-
-[font]
-size = 19.0
 
 [font.normal]
 family = "JetBrainsMono Nerd Font"
