@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=obsidian
 GenericName=PKM system
-Exec=/usr/bin/obsidian %U
+Exec=env -u XDG_DATA_DIRS -u XDG_DATA_HOME /usr/bin/obsidian %U
 Terminal=false
 Type=Application
 Icon=obsidian

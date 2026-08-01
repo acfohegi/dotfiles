@@ -3,7 +3,7 @@ Version=1.0
 Name=celluloid
 GenericName=Multimedia Player
 Comment=Play movies and videos
-Exec=celluloid %U
+Exec=env -u XDG_DATA_DIRS -u XDG_DATA_HOME celluloid %U
 # Translators: This is an icon name, don't translate!
 Icon=io.github.celluloid_player.Celluloid
 Terminal=false

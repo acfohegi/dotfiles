@@ -2,7 +2,7 @@
 Name=keepassxc
 GenericName=Password Manager
 Comment=Community-driven port of the Windows application “KeePass Password Safe”
-Exec=keepassxc %f
+Exec=env -u XDG_DATA_DIRS -u XDG_DATA_HOME keepassxc %f
 TryExec=keepassxc
 Icon=keepassxc
 StartupWMClass=keepassxc

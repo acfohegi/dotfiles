@@ -16,6 +16,8 @@ xclip
 clipcat
 brightnessctl
 bluez-deprecated-tools
+smbclient
+smartmontools
 
 # tui & cli
 tcpdump
@@ -37,6 +39,8 @@ zip
 unzip
 p7zip
 yt-dlp
+firejail
+tree
 
 # graphics & audio utilities
 xorg-server
@@ -71,4 +75,9 @@ ttf-jetbrains-mono-nerd
 alacritty
 celluloid
 thunar
+zathura
+zathura-pdf-mupdf
+obsidian
+calibre
+quodlibet
 

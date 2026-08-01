@@ -2,7 +2,7 @@
 Name=arandr
 GenericName=Screen Settings
 Icon=display
-Exec=arandr
+Exec=env -u XDG_DATA_DIRS -u XDG_DATA_HOME arandr
 Type=Application
 Categories=Settings;HardwareSettings;
 StartupNotify=true

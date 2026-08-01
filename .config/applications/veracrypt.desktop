@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=veracrypt
+Exec=env -u XDG_DATA_DIRS -u XDG_DATA_HOME veracrypt
 Icon=veracrypt.xpm
 Comment=Disk encryption with strong security based on TrueCrypt
 Terminal=false

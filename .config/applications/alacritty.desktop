@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 TryExec=alacritty
-Exec=alacritty
+Exec=env -u XDG_DATA_DIRS -u XDG_DATA_HOME alacritty
 Icon=Alacritty
 Terminal=false
 Categories=System;TerminalEmulator;
