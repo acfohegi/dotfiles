@@ -5,11 +5,10 @@ export EDITOR="vim"
 export FZF_DEFAULT_COMMAND="find * -type f"
 
 case "$(uname -s)" in
-  Darwin)
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-    ;;
-  Linux)
-    export PATH="$HOME/.local/bin:$PATH"
-    ;;
+    Darwin)
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+        ;;
 esac
+
+export PATH="$HOME/.local/bin:$PATH"
 
