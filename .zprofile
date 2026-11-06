@@ -12,3 +12,7 @@ esac
 
 export PATH="$HOME/.local/bin:$PATH"
 
+# Machine-local login settings, not tracked
+PRIVATE_PROFILE_FILE="$XDG_CONFIG_HOME/zsh/private/profile.zsh"
+[ -f "$PRIVATE_PROFILE_FILE" ] && source "$PRIVATE_PROFILE_FILE"
+
