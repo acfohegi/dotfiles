@@ -2,13 +2,15 @@
 # Zsh Completion Configuration
 # =============================================
 
-# Initialize the completion system
-# -U: Don't run compaudit (security check)
-# -z: Use zsh (not ksh) completion system
+# Load the compinit function
+# -U: Don't expand aliases while loading the function
+# -z: Load in zsh (not ksh) style
 autoload -Uz compinit
 
 # Initialize completion system
-compinit
+# ZSH_COMPINIT_FLAGS: extra flags from machine-local profile,
+# e.g. -u when completion dirs belong to another user (second Homebrew user)
+compinit ${=ZSH_COMPINIT_FLAGS}
 
 # =============================================
 # Completion Behavior
