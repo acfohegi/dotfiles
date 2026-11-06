@@ -25,6 +25,9 @@ if command -v zoxide > /dev/null; then
   eval "$(zoxide init zsh)"
 fi
 
+# Allow comments (# ...) in interactive shell
+setopt interactivecomments
+
 # =========================
 # Zsh Bindings
 # =========================
